@@ -246,6 +246,7 @@ class PageController
         $var1= new Productos();
         echo('desde lowg');
         debuguear($var1);
+        $_router->render('home/home')
     }
 
 }
