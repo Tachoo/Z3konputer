@@ -2,7 +2,9 @@
 
 //Mencionamos el Namespace de controllers que definimos en  -composer.json
 namespace Controllers;
+
 use Classes\Email;
+use Model\Productos;
 use Model\Search;
 use Model\Usuario;
 use MVC\Router;
@@ -236,6 +238,12 @@ class PageController
             'alertas'=>$_alertas
         ]); //La funcion recibe dos parametros | vista | arreglo |  el arreglo es para pasarle los valores a la vista 
     
+    }
+
+    public static function api()
+    {
+        $_productos=Productos::all();
+        debuguear($_productos);
     }
 
 }
