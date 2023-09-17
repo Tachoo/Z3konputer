@@ -1,12 +1,12 @@
 # Rewrite to www
-#Options +FollowSymLinks
+Options +FollowSymLinks
 #RewriteEngine on
 #RewriteCond %{HTTP_HOST} ^z3konputer.com[nc]
 #RewriteRule ^(.*)$ http://www.z3konputer.com/$1 [r=301,nc]
-#RewriteEngine on
-#RewriteCond %{HTTP_HOST} ^cmcio.xyz$ [NC,OR]
-#RewriteCond %{HTTP_HOST} ^www.cmcio.xyz$
-#RewriteCond %{REQUEST_URI} !public/
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^cmcio.xyz$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.cmcio.xyz$
+RewriteCond %{REQUEST_URI} !public/
 RewriteRule (.*) /public/$1 [L]
 
 # Caching schema
