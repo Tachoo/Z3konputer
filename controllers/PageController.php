@@ -240,10 +240,9 @@ class PageController
     
     }
 
-    public static function api()
+    public static function api(Router $_router)
     {
-        $_productos=Productos::all();
-        debuguear($_productos);
+        echo('desde lowg');
     }
 
 }
