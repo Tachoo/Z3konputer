@@ -1,16 +1,19 @@
 <?php
-namespace Controllers;
-use Model\ActiveRecord;
-use Model\Productos;
-use MVC\Router;
-class APIController  extends ActiveRecord
-{ 
-    public static function productos(Router $_routers)
-    {
-        $_productos=Productos::all();
-        //debuguear($_productos);
-        echo json_encode($_productos);
 
-        $_routers->render('single/single-product');
+//Mencionamos el Namespace de controllers que definimos en  -composer.json
+namespace Controllers;
+
+
+use MVC\Router;
+
+//Creamos la classe con el nombre del fichero
+class APIController
+{
+    //Home
+    public static function api(Router $_router) //la funcion recibe una classe router
+    {
+       echo('desde api'); 
     }
+    //search
+
 }

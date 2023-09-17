@@ -35,7 +35,7 @@ $router->get('/mensaje',[PageController::class,'mensaje']);
 //confirmar cuenta
 $router->get('/confirmar-cuenta',[PageController::class,'confirmar']);
 //Api services
-$router->get('/api',[PageController::class,'mensaje']);
+$router->get('/api',[APIController::class,'api']);
 
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
