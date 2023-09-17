@@ -1,8 +1,9 @@
 <?php
 namespace Controllers;
+use Model\ActiveRecord;
 use Model\Productos;
 use MVC\Router;
-class APIController
+class APIController  extends ActiveRecord
 { 
     public static function productos(Router $_routers)
     {
