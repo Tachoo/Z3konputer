@@ -1,0 +1,71 @@
+@use '../base/variables' as v;
+
+
+.auth
+{
+    border: 0.1rem solid black;
+    background-color: v.$blanco;
+    padding-bottom: 2.5rem;
+}
+.auth-title
+{
+    margin: 1rem 1rem 1rem 1rem;
+    text-align: left;
+}
+.auth-form
+{
+    border: 0.1rem solid blue;
+    padding: 0.5rem 0.4rem;
+    border-radius: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.auth-form__campo
+{
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.auth-form__campo label
+{
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 0.4rem;
+    font-size: 1.8rem;
+
+}
+.auth-form__campo input
+{
+    padding: 0.8rem;
+    border-radius: 1.2rem;
+    background-color: v.$background;
+}
+.auth-form__campo button
+{
+    border-radius: 1.8rem;
+    border: 0.1rem solid red;
+    padding: 1.4rem;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.20;
+}
+.auth-help
+{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.auth-help a
+{
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+}
+.auth-help span
+{
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.20;
+}

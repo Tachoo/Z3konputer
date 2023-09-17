@@ -1,0 +1,102 @@
+@use '../base/variables' as v;
+.fog
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: v.$negro;
+    z-index: 1;
+}
+.menu_conteiner
+{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: v.$blanco;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    
+}
+.menu_close
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: v.$blanco;
+    font-size: 3rem;
+    padding: 2.5rem 2.5rem;
+    z-index: 2;
+    font-weight: 500;
+}
+.menu_background
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    font-size: 3rem;
+    z-index: 1; 
+}
+.menu-header
+{
+    
+    background-color: v.$gris-active;
+    width: 100%;
+    padding: 0.8rem 0rem 0rem 0rem ;
+}
+.menu-header__conteiner
+{
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    
+}
+.menu-header-btn-login,.menu-header-btn-explorar
+{
+    font-size: calc(v.$fontsize*1.3);
+    font-weight: 700;
+    padding: calc(v.$separacion/6) 0rem;
+}
+.menu-header-btn-login
+{
+    text-align:right ;
+}
+.menu-header-btn-explorar
+{
+    text-align:left;
+}
+.menu-body__conteiner
+{
+    
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 0.8rem 0rem 0rem 0rem ;
+    gap: 0.8rem;
+}
+.menu-body__tendencias,.menu-body__categorias
+{
+    border-top: 0.2rem solid v.$gris;
+    padding: 0.6rem 0rem;
+}
+.menu-body__tendencias-head,.menu-body__categorias-head,.menu-body__home-head a
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.menu-body__home h3,.menu-body__tendencias h3,.menu-body__categorias h3
+{
+    text-align: left;
+    vertical-align: middle;
+    margin: 0;
+    border: 0;
+}
+.menu-body span
+{
+    font-size: 2.8rem;
+    margin-right: 0.2rem;
+
+}

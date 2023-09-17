@@ -1,0 +1,77 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+
+.header
+{
+padding: 0.5rem 0rem 0.5rem 0rem;    
+width: 100%;
+background-color: v.$gris;
+}
+.header__grid
+{
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.header__grid section:nth-child(1)
+{
+    padding: 0.5rem 0rem 0.2rem 0rem;
+}
+.header__grid section:nth-child(2)
+{
+    padding: 0.2rem 0rem 0.6rem 0rem;
+}
+.header__grid__secction
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.grid__section__conteiner a
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: v.$negro;
+    padding: 0.5rem 0.5rem;
+}
+.header-menu,.header-account,.header-shopcart,.search-bar__icon
+{
+    font-size: calc(v.$fontsize*1.8);
+    font-weight: 500;
+}
+.header-menu
+{
+    padding: 0.5rem 0.5rem;
+} 
+.header-logo
+{
+    font-size: calc(v.$fontsize*1.2);
+    font-weight: 700;
+}
+.search-bar__field
+{
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+
+}
+.search-bar__text
+{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 3.8rem 0.5rem 1.5rem;
+    border-radius: 1.2rem;
+}
+.search-bar__icon
+{
+    position: absolute;
+    right: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 1.2rem;
+    
+}

@@ -1,0 +1,155 @@
+@use 'variables' as v;
+
+html
+{
+    position: relative;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100%;
+}
+body
+{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: v.$background;
+    color: v.$negro;
+    font-size: 1.6rem;
+    &.fijarbody
+    {
+        overflow: hidden;
+    }    
+}
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+body
+{
+    font-family: v.$fuente_principal;   
+}
+img
+{
+    display: block;
+    max-width: 100%;
+    aspect-ratio: 16/9; // objet-fit contein
+    object-fit:contain;
+    width: 100%;
+    background-color: transparent;
+}
+form
+{
+    max-width: 100%;
+}
+button,input,ul,li
+{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+
+input, select, textarea
+{
+    -webkit-transition: all .1s linear;
+    transition: all 0.1s linear;
+    line-height: 1.35;
+    color: #0F1111;
+}
+ul,li
+{
+    text-decoration: none;
+}
+//Dev class
+.border
+{
+    border: 0.1rem solid #000;
+}
+.f-left
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.f-right
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+/*Classes utilitarias*/
+.contenedor
+{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.text-center
+{
+    text-align: center;
+}
+.p-1
+{
+    padding: 1rem;
+}
+.hide
+{
+    display: none;
+}
+.active
+{
+    display: block;
+}
+.a-button
+{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0;
+    outline: 0;
+    text-align: center;
+    border-radius: 1.5rem;
+    padding: 1.2rem 2.6rem 1.2rem 2.7rem;
+    margin: 1rem 0rem 1rem 0rem ;
+}
+
+.a-footer
+{
+    background-color: transparent;
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+    outline: 0;
+    text-align: center;
+}
+
+.a-footer-login
+{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0;
+    outline: 0;
+    text-align: center;
+    justify-content: center;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    //margin: 1rem 0rem 1rem 0rem ;
+}
+.bold9
+{
+    font-weight: 700;
+}
+.bold7
+{
+    font-weight: 700;
+}

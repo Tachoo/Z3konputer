@@ -1,0 +1,51 @@
+@use '../base/variables' as v;
+
+.op09
+{
+    opacity: 0.35;
+}
+
+.product-single
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.product-price,.product-msi,.product-delivery
+{
+    padding: 0rem 0rem 0.8rem 0rem;
+}
+.product-price
+{
+    display: flex;
+    flex-direction: row;    
+}
+.price-simbol,.price-cents
+{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.price-import
+{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.selector-cantidad__opcion
+{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0.8rem 1rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.9rem;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: left;
+    padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+    width: fit-content;
+    background-color: v.$gris;
+}
+.product-cantidad
+{
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+

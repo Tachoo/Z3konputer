@@ -1,0 +1,22 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.menu-principal
+{
+    position: absolute;
+    width: 75%;
+    background-color: v.$blanco;
+    height: 100%;
+    z-index: 2;
+}
+.menu-principal-close
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.8rem;
+    color: v.$blanco;
+    font-size: v.$fontsize-header-icon*1.5;
+    font-weight: v.$bold;
+    z-index: 2;
+}

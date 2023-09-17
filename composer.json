@@ -1,0 +1,21 @@
+{
+    "name": "sergi/cmcio_php_mvc_js_sass",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Controllers\\":"./controllers",
+            "Model\\": "./models",
+            "Classes\\":"./classes"
+          }
+    },
+    "authors": [
+        {
+            "name": "Sergianh",
+            "email": "137209397+Sergianh@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

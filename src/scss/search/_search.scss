@@ -1,0 +1,95 @@
+@use '../base/variables' as v;
+
+.search-card
+{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    border: 0.1rem solid v.$gris;
+    margin: 0.6rem 0.0rem 0.6rem 0.0rem;
+}
+.search-card div:nth-child(1)
+{
+    grid-column: 1/6;
+}
+.search-card div:nth-child(2)
+{
+    grid-column: 6/13;
+}
+
+.search-thumbnail,.search-infoBox
+{
+   // padding: 0.8rem 0.4rem 0.8rem 0.4rem;
+}
+.search-thumbnail
+{
+    background-color: v.$blanco;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.search-thumbnail picture
+{
+width: 100%;
+}
+.search-thumbnail img
+{
+  object-fit:scale-down;
+  padding: 0.2rem;
+}
+
+.search-infoBox
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: inherit;
+    padding:0.5rem 0.0rem 0.5rem 0.5rem;
+}
+.search-discount,.search-precio__precio,.search-precio__precio-antes
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.search-msi,.search-delivery-time,.search-delivery-free
+{
+    font-size: 1.4rem;
+    padding: 0.3rem 0rem 0.3rem 0rem;
+}
+.search-precio__precio
+{
+    font-size: 1.4rem;
+}
+.search-precio__precio-text
+{
+    margin: 0.1rem 0rem 0rem 0rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    
+}
+.search-precio__precio-antes-text
+{
+    text-decoration: line-through;
+}
+.search-titulo
+{
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: left;
+}
+.search-discount-text
+{
+    margin: 0;
+    padding: 0.8rem 0.4rem 0.8rem 0.4rem;
+    color: v.$blanco;
+}
+.search-discount
+{
+    border-radius: 1.2rem;
+    background-color: red;
+    width: fit-content;
+    margin: 0.4rem 0rem 0.4rem 0rem;
+}
