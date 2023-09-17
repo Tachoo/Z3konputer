@@ -2,7 +2,7 @@
 namespace Model;
 use MVC\Router;
 
-class productos extends ActiveRecord
+class Producto extends ActiveRecord
 {
     //Referencia de datos con la classe Active Records
     protected static $tabla ='productos';

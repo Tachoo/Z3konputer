@@ -5,6 +5,7 @@ namespace Controllers;
 
 use Classes\Email;
 
+use Model\Producto;
 use Model\Productos;
 use Model\Search;
 use Model\Usuario;
@@ -243,10 +244,10 @@ class PageController
 
     public static function api(Router $_router)
     {
-        $var1= new Productos();
-        echo('desde lowg');
-        debuguear($var1);
-        $_router->render('home/home')
+        $var1=Producto::all();
+        json_encode($var1);
+        print_r($var1);        
+
     }
 
 }
