@@ -4,6 +4,7 @@ require_once __DIR__ . '/../includes/app.php';
 
 use Controllers\APIController;
 use Controllers\PageController;
+use Controllers\testController;
 use MVC\Router;
 //instancia del objeto router
 $router = new Router();
@@ -35,7 +36,7 @@ $router->get('/mensaje',[PageController::class,'mensaje']);
 //confirmar cuenta
 $router->get('/confirmar-cuenta',[PageController::class,'confirmar']);
 //Api services
-$router->get('/api',[APIController::class,'api']);
+$router->get('/test',[ testController::class,'index']);
 
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
