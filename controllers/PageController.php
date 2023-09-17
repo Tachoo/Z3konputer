@@ -245,8 +245,8 @@ class PageController
     public static function api(Router $_router)
     {
         $var1=Producto::all();
-        json_encode($var1);
-        print_r($var1);        
+        echo (json_encode($var1));
+                
 
     }
 
