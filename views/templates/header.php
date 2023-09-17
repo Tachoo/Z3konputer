@@ -4,7 +4,7 @@
         <div class="menu-header ">
             <div class="menu-header__conteiner contenedor">
                 <a href="/login"class="menu-header-btn-login">Iniciar session</a>
-                <a href="/"class="menu-header-btn-explorar">Explorar en CMCIO</a>
+                <a href="/"class="menu-header-btn-explorar">Explorar en Z3konputer</a>
             </div>
         </div>
         <div class="menu-body">
@@ -83,7 +83,7 @@
         <section class="header__grid__secction">
             <div class="grid__section__conteiner f-left">
                 <span class="material-symbols-outlined header-menu">menu</span>
-                <a href="/" ><span class="header-logo">CMCIO.XYZ</span></a>
+                <a href="/" ><span class="header-logo">Z3konputer.com</span></a>
             </div>
             <div class="grid__section__conteiner f-right">
                 <a href="/login" ><span class="material-symbols-outlined header-account">person</span></a>

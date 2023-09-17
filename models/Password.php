@@ -98,6 +98,6 @@ class Passwords extends ActiveRecord
     {
         //tiene un priblema que agrega un espacio vacio por que le da la gana... 
         // Lo mejor es debugear pero para efectos de prueba le gragamos ese espacio en '/validar'
-        $this->token=s(uniqid('cmcio',false));
+        $this->token=s(uniqid('Z3konputer',false));
     }
 }
