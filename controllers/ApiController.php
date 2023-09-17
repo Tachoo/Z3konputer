@@ -11,7 +11,7 @@ use MVC\Router;
 class APIController
 {
     //Home
-    public function api(Router $_router) //la funcion recibe una classe router
+    public function api() //la funcion recibe una classe router
     {
         $product = Productos::all();
        debuguear($product);
