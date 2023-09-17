@@ -6,7 +6,7 @@
 #RewriteEngine on
 #RewriteCond %{HTTP_HOST} ^cmcio.xyz$ [NC,OR]
 #RewriteCond %{HTTP_HOST} ^www.cmcio.xyz$
-RewriteCond %{REQUEST_URI} !public/
+#RewriteCond %{REQUEST_URI} !public/
 RewriteRule (.*) /public/$1 [L]
 
 # Caching schema
