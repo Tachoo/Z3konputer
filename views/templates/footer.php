@@ -39,7 +39,7 @@
             <div class="footer-login contenedor">
                 <a href="/login" class="a-footer-login">¿Ya tienes cuenta? inicia session</a>
             </div>
-            <span class="footer-copy" >(c)2023 cmcio.xyz, Inc o sus afiliados.</span>
+            <span class="footer-copy" >(c)2023 z3konputer.com, Inc o sus afiliados.</span>
         </section>
     </div>
 </footer>
