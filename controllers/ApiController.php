@@ -11,10 +11,12 @@ use MVC\Router;
 class APIController
 {
     //Home
-    public function api() //la funcion recibe una classe router
+    public function api(Router $router) //la funcion recibe una classe router
     {
         $product = Productos::all();
        debuguear($product);
+
+       $router
     }
     //search
 
